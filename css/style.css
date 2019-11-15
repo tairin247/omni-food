@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:300,400,450,700&display=swap');
+
+/* Global css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.container
+{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Navbar section */
+header 
+{
+    background: linear-gradient(to right,#00867d,#0090a0);
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+}
+.logo 
+{
+    width: 30%;
+    float: left;
+}
+.menu 
+{
+    width: 70%;
+    float: left;
+}
+.menu ul 
+{
+    list-style: none;
+    float: right;
+    margin-top: 5px;
+}
+.menu ul li 
+{
+    float: left;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    display: inline-block;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.menu ul li:last-child 
+{
+    background: #00c29e;
+}
+.menu ul li a:hover
+{
+    background: #00c29e;
+}
+
+/* Banner section */
+.banner
+{
+    background: url(../images/banner-bg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.banner:after 
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero-text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.hero-text h1
+{
+    font-size: 41px;
+    font-weight: 700;
+}
+.hero-text .highlight
+{
+    text-transform: lowercase;
+    font-weight: 300;
+}
+.btn
+{
+    display: inline-block;
+    width: 150px;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 60px 10px;
+}
+.btn-cta
+{
+    background: linear-gradient(to right,#00867d,#0090a0);
+}
+.btn-ghost
+{
+    transition: all 0.4s linear;
+}
+.btn-ghost:hover
+{
+    background: linear-gradient(to right,#00867d,#0090a0);
+}
+
+/* Service section */
+.service
+{
+    float: left;
+    width: 100%;
+    padding: 80px 0;
+    background: #e9ebee;
+}
+.service .service-txt
+{
+    text-align: center;
+    width: 100%;
+    float: left;
+    color: #222;
+    margin-bottom: 7%;
+}
+.service .service-txt h2
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+.service .service-txt p
+{
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 0% 7%;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.service .box
+{
+    width: 24%;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 0px 0.5%;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0px 0px 10px #c3c3c3;
+}
+.service .box .top-portion
+{
+    padding: 30px 0.15px;
+    border-bottom: 3px solid #e0e0e0;
+}
+.service .box .top-portion img
+{
+    margin-bottom: 20px;
+}
+.service .box .top-portion h4
+{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.service .box p
+{
+    padding: 15px 20px 30px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #222;
+}
+.service .box:first-child
+{
+    margin-left: 0;
+}
+.service .box:last-child
+{
+    margin-right: 0;
+}
+
+/* Work section */
+.work
+{
+    width: 100%;
+    float: left;
+    padding: 80px 0;
+}
+.work h2
+{
+    margin: 50px 0;
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.uses
+{
+    width: 100%;
+    float: left;
+}
+.phone
+{
+    width: 40%;
+    float: left;
+    text-align: right;
+}
+.phone img
+{
+    width: 50%;
+}
+.list
+{
+    width: 60%;
+    display: inline-block;
+    float: left;
+    padding: 0 0 0 4%;
+    box-sizing: border-box;
+}
+.list ul
+{
+   list-style: none;font-size: 20px;
+}
+.list ul li
+{
+    margin: 50px 0;
+    line-height: 1.5;
+}
+.serial
+{
+    width: 10%;
+    border: 3px solid #04b3a7;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    margin-right: 2%;
+    font-size: 40px;
+}
+.links
+{
+    float: left;
+    width: 100%;
+}
+.links a img
+{
+    margin-left: 5%;
+}
+
+/* Our cities section */
+.cities
+{
+    width: 100%;background: #e9e9e9;float: left;
+}
+.cities h2
+{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 80px 0;
+    color: #222222;
+}
+.whole-box
+{
+    width: 100%;
+    float: left;
+}
+.city
+{
+    width: 23%;
+    float: left;
+    margin: 10px;
+    margin-bottom: 5%;
+}
+.city img
+{
+    width: 100%;
+    margin: 5% 0 5% 0;
+}
+.city h3
+{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #222222;
+    margin: 4% 0 4% 0;
+    font-family: 'Lato', sans-serif;
+}
+.city ul
+{
+    list-style: none;
+}
+.city ul li
+{
+    position: relative;
+}
+.city ul li img
+{
+    width: 20%;
+}
+.city ul li p
+{
+    display: inline-block;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin-left: 30px;
+    color: #222;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Testimonial section */
+.testimonial
+{
+    width: 100%;
+    background: linear-gradient(to right,#013327e3,#042429e8),url(../images/testimonial-bg.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    float: left;
+    padding: 50px 0;
+    position: relative;
+}
+.testimonial h2
+{
+    color: #fefefe;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+.inverted-comma
+{
+    font-size: 100px;
+    color: #fefefe;
+    position: absolute;
+    top: 25%;
+    left: 24%;
+    font-weight: 300;
+}
+.testimonial p
+{
+    color: #fefefe;
+    padding: 5% 23% 0 25%;
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.customer
+{
+    margin-top: 3%;
+    float: left;
+    width: 100%;
+}
+.customer-img
+{
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.customer-img img
+{
+    width: 20%;
+    margin-right: 5%;
+    border: 3px solid #0b3c2e;
+    border-radius: 50%;
+}
+.customer-name
+{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.customer-name h4
+{
+    color: #fefefe;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    padding: 10% 0 10% 6%;
+    text-transform: capitalize;
+}
+
+/* Our plan section */
+.plans
+{
+    width: 100%;
+    padding: 80px 0;
+    float: left;
+    background: #e9e9e9;
+}
+.plans h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+.packages
+{
+    width: 31.33%;
+    float: left;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #c3c3c3;
+    border-radius: 4px;
+    background: #fff;
+    padding: 40px 20px;
+    margin: 0 1%;
+    transition: all 0.4s linear;
+}
+.packages h3
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+    margin: 3% 0;
+}
+.packages h1
+{
+    text-align: center;
+    font-size: 25px;
+    color: #222222;
+    margin: 4% 0;
+    font-family: 'Lato', sans-serif;
+}
+.packages h1 span
+{
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+}
+.packages .line
+{
+    width: 100%;
+    background: #4daca8;
+    opacity: 0;
+    height: 2px;
+}
+.packages ul
+{
+    list-style: none;
+}
+.packages ul li
+{
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+}
+.packages ul li i
+{
+    color: #267f5f;
+    font-size: 25px;
+    margin: 2%;
+}
+.signup
+{
+    width: 100%;
+    float: left;
+    margin-top: 10%;
+    height: 66px;
+    display: inline-block;
+    position: relative;
+}
+.submit
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid #00867d;
+    z-index: 1;
+    padding: 14px 15px;
+    background: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.4s linear;
+    outline: 0;
+    font-size: 18px;
+}
+.signup:after
+{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 47%;
+    height: 80%;
+    background: linear-gradient(to right, #00867d, #0090a0);
+    z-index: 0;
+    border: 4px solid white;
+    border-radius: 5px;
+}
+.packages:hover .line
+{
+    opacity: 1;
+}
+.packages:hover .signup:after
+{
+    background: #fff;
+}
+.packages:hover .submit
+{
+    background: #078694;
+    color: #fff;
+}
+.packages:hover ,.packages:hover h3, .packages:hover h1, .packages:hover ul li, .plans:hover ul li i
+{
+    background: #008882;
+    color: #fff;
+}
+
+/* Registration section */
+
+.registration
+{
+    width: 100%;
+    float: left;
+    padding: 80px 0;
+}
+.registration h2
+{
+    text-align: center;
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 6%;
+}
+.inputs
+{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 30%;
+}
+.txt,.email
+{
+    width: 100%;
+    display: block;
+    background: #e9e9e9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    padding: 15px;
+    margin: 5% 0;
+}
+.inputs select
+{
+    width: 100%;
+    display: block;
+    margin: 5% 0;
+    border-radius: 5px;
+    background: #e9e9e9;
+    border: 2px solid #fff;
+    color: #757a84;
+    padding: 3%;
+    box-sizing: border-box;
+}
+.input1
+{
+    display: inline-block;
+    padding: 13px 13px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+    margin: 3% 32%;
+    transition: all 0.4s linear;
+}
+.submit1
+{
+    
+    background: none;
+    border: none;
+    padding: 0 15%;
+    font-weight: 600;
+    color: #222;
+}
+.input1:after
+{ 
+    content: " ";
+    position: absolute;
+    width: 104%;
+    height: 115%;
+    z-index: -1;
+    background: linear-gradient(to right, #00867d, #0090a0);
+    top: -5.7%;
+    left: -2%;
+    border-radius: 5px;
+}
+.input1:hover{
+        background: #00909f;
+    }
+.input1:hover .submit1
+{
+    color: #fff;
+}
+
+
+
+/* Office section */
+
+.office
+{
+        
+    float: left;
+    width: 100%;
+    background: linear-gradient(to right, rgba(2, 58, 36, 0.86), rgba(2, 45, 34, 0.84)),url(../images/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 570px;
+    position: relative;
+}
+.map
+{
+    float: left;
+    width: 40%;
+    position: absolute;
+    top: 12%;
+    text-align: right;
+}
+.map img
+{
+    width: 90%;
+}
+.placeholder img
+{
+    width: 4%;
+    position: absolute;
+    bottom: 6%;
+    left: 31%;
+}
+.circle
+{
+    width: 5%;
+    position: absolute;
+    top: 10%;
+    left: 120%;
+}
+.circle:after
+{
+    position: absolute;
+    top: -9%;
+    left: -28%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    border: 8px solid #fff;
+}
+.location
+{
+    float: left;
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    color: #fff;
+    left: 55%;
+}
+.adress
+{
+    list-style: none;
+}
+.adress h2
+{
+    font-size: 40px;
+    margin-top: 3%;
+}
+.adress li
+{
+    padding: 2% 0;
+    font-size: 20px;
+}
+.adress li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.connect
+{
+    list-style: none;
+    margin-top: 3%;
+}
+.connect h2
+{
+    font-size: 40px;
+    padding: 2.5% 0;
+}
+.connect li
+{
+    display: inline-block;
+    padding-right: 3%;
+}
+.connect li img
+{
+    width: 100%;
+}
